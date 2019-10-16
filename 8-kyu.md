@@ -12,6 +12,7 @@ var countSheep = function (num) {
 }
 ```
 
+
 # Find numbers which are divisible by given number
 
 Complete the function which takes two arguments and returns all numbers which are divisible by given divisor. First argument is an array of numbers and the second is the divisor.
@@ -21,6 +22,7 @@ function divisibleBy(numbers, divisor){
   return numbers.filter(n => n % divisor === 0)
 }
 ```
+
 
 # Century from year
 
@@ -42,6 +44,7 @@ function century(year) {
 }
 ```
 
+
 # Are You Playing Banjo?
 
 Create a function which answers the question "Are you playing banjo?".
@@ -59,6 +62,7 @@ return name + (name[0].toLowerCase() == "r" ? ' plays' : ' does not play') + " b
 }
 ```
 
+
 # The 'if' function
 
 Who likes keywords? Nobody likes keywords, so why use them?
@@ -73,4 +77,20 @@ _if(true, function(){console.log("True")}, function(){console.log("false")})
 function _if(bool, func1, func2) {
  return bool ? func1() : func2();
  }
+```
+
+# Is n divisible by x and y?
+
+Create a function isDivisible(n, x, y) that checks if a number n is divisible by two numbers x AND y. All inputs are positive, non-zero digits.
+
+Example:
+isDivisible(3,1,3)--> true because 3 is divisible by 1 and 3
+isDivisible(12,2,6)--> true because 12 is divisible by 2 and 6
+isDivisible(100,5,3)--> false because 100 is not divisible by 3
+isDivisible(12,7,5)--> false because 12 is neither divisible by 7 nor 5
+
+```javascript
+function isDivisible(n, x, y) {
+return n % x == 0 && n % y == 0
+}
 ```
