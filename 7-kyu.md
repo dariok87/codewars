@@ -35,7 +35,6 @@ const removeDuplicateWords = s => {
 
 #3 Solution :
 
-function removeDuplicateWords (s) {
-  return [...new Set(s.split(' '))].join(' ');
-}
+const removeDuplicateWords = s => [...new Set(s.split(' '))].join(' ');
+
 ```
