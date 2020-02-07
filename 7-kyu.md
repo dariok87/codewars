@@ -14,7 +14,7 @@ Output:
 
 ```javascript
 
-#1 Solution:
+#1 Solution :
 
 const removeDuplicateWords = s =>
   s
@@ -25,10 +25,17 @@ const removeDuplicateWords = s =>
     .join(" ");
 
 
-#2 Solution:
+#2 Solution :
 
 const removeDuplicateWords = s => {
   const set = new Set(s.split(' '));
   return Array.from(set).join(' ');
+}
+
+
+#3 Solution :
+
+function removeDuplicateWords (s) {
+  return [...new Set(s.split(' '))].join(' ');
 }
 ```
