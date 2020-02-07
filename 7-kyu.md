@@ -13,4 +13,11 @@ Output:
 'alpha beta gamma delta'
 
 ```javascript
+const removeDuplicateWords = s =>
+  s
+    .split(" ")
+    .filter(function(a, b, c) {
+      return b === c.indexOf(a);
+    })
+    .join(" ");
 ```
