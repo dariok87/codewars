@@ -104,6 +104,7 @@ CONVERSION_RATES = {
 Note: CONVERSION_RATES is frozen.
 
 ```javascript
+#1 Solution :
 const vowels = ["A", "E", "I", "O", "U"];
 
 const getConversionRate = (currency) => {
@@ -118,4 +119,8 @@ const convertMyDollars = (USD, currency) => {
   const amount = USD * getConversionRate(currency);
   return `You now have ${amount} of ${currency}.`;
 };
+
+#2 Solution :
+const convertMyDollars = (usd, currency) => `You now have ${usd * parseInt(CONVERSION_RATES[currency], /[AEIOU]/.test(currency.charAt(0)) ? 10 : 2)} of ${currency}.`;
+
 ```
