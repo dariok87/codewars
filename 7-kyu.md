@@ -177,4 +177,9 @@ Good luck!
 Please also try Simple remove duplicates
 
 ```javascript
+const solve = (a, b) =>
+  (a + b)
+    .split("")
+    .filter((c) => !a.includes(c) || !b.includes(c))
+    .join("");
 ```
