@@ -194,3 +194,7 @@ All elements of the sum are the results of integer division.
 
 Example
 25 => 25 + 12 + 6 + 3 + 1 = 47
+
+```javascript
+const halvingSum = (n) => (n === 1 ? 1 : n + halvingSum(Math.floor(n / 2)));
+```
