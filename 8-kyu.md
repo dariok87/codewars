@@ -184,3 +184,15 @@ const describeAge = age =>
 
 let describeAge = a => `You're a(n) ${ a < 13 ? 'kid' : a < 18 ? 'teenager': a  <65 ? 'adult' : 'elderly' }`
 ```
+
+# Build a function that returns an array of integers from n to 1 where n>0.
+
+Example : n=5 --> [5,4,3,2,1]
+
+```javascript
+const reverseSeq = n => {
+  return [];
+};
+```
+
+
