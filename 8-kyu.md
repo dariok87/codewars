@@ -191,7 +191,11 @@ Example : n=5 --> [5,4,3,2,1]
 
 ```javascript
 const reverseSeq = n => {
-  return [];
+  let arr = [];
+  for (let i = 1; i <= n; i++) {
+    arr.push(i);
+  }
+  return arr.reverse();
 };
 ```
 
