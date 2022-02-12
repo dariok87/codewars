@@ -221,6 +221,15 @@ You have: a0 > 0, p% > 0, a >= a0
 
 ```javascript
 function dateNbDays(a0, a, p) {
-	// your code
+  let date = new Date(2016, 0, 1); 
+  let days = 0;
+  while (a0 < a) {
+    a0 += (a0 * (p / 100)) / 360;
+    days++;
+  }
+
+  date.setDate(date.getDate() + days); 
+  
+  return date.toISOString().split("T")[0];
 }
 ```
